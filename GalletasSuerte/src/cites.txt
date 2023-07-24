@@ -1,0 +1,407 @@
+{"content":[
+  {
+    "author": "Milan Kundera",
+    "cite": "El conocimiento verdadero surge de la confrontación con nuestros propios límites"
+  },
+  {
+    "author": "Franz Kafka",
+    "cite": "Detrás de cada acción cotidiana yace un misterio insondable esperando ser descubierto"
+  },
+  {
+    "author": "Friedrich Nietzsche",
+    "cite": "La verdadera grandeza se encuentra en la capacidad de aceptar la inevitabilidad del sufrimiento"
+  },
+  {
+    "author": "Albert Camus",
+    "cite": "En la búsqueda de significado, encontramos nuestra existencia en un mundo indiferente"
+  },
+  {
+    "author": "Søren Kierkegaard",
+    "cite": "El auténtico valor de la vida se encuentra en los momentos de angustia, donde el alma es forjada"
+  },
+  {
+    "author": "Virginia Woolf",
+    "cite": "La escritura es un acto de exploración que nos lleva a descubrir los rincones más oscuros de nuestra alma"
+  },
+  {
+    "author": "Hermann Hesse",
+    "cite": "La búsqueda de la felicidad reside en la aceptación plena de nuestra propia imperfección"
+  },
+  {
+    "author": "Fyodor Dostoyevsky",
+    "cite": "El sufrimiento humano es el motor que impulsa la evolución de nuestra conciencia"
+  },
+  {
+    "author": "Anton Chekhov",
+    "cite": "La belleza de la vida se encuentra en los pequeños momentos de alegría y asombro"
+  },
+  {
+    "author": "Henrik Ibsen",
+    "cite": "La verdad solo puede ser enfrentada con coraje, incluso cuando nos cause dolor"
+  },
+  {
+    "author": "Leo Tolstoy",
+    "cite": "El amor incondicional es el puente que conecta nuestras almas en un mar de posibilidades"
+  },
+  {
+    "author": "Gustave Flaubert",
+    "cite": "La escritura es un acto de resistencia contra la fugacidad de la existencia"
+  },
+  {
+    "author": "Simone de Beauvoir",
+    "cite": "La libertad no es un regalo, sino una lucha constante por preservarla"
+  },
+  {
+    "author": "Jorge Luis Borges",
+    "cite": "La literatura es el mapa que nos guía a través de los laberintos de la imaginación"
+  },
+  {
+    "author": "Gabriel García Márquez",
+    "cite": "La magia de la vida se encuentra en los detalles que a menudo pasan desapercibidos"
+  },
+  {
+    "author": "Italo Calvino",
+    "cite": "La imaginación es la fuerza motriz que impulsa la creación y la transformación"
+  },
+  {
+    "author": "Hermann Broch",
+    "cite": "La verdadera grandeza se forja en los momentos de mayor adversidad"
+  },
+  {
+    "author": "Rainer Maria Rilke",
+    "cite": "La belleza auténtica no puede ser capturada, solo experimentada en el momento presente"
+  },
+  {
+    "author": "Paul Valéry",
+    "cite": "La poesía es el lenguaje de las emociones que no pueden ser expresadas con palabras comunes"
+  },
+  {
+    "author": "Albert Cohen",
+    "cite": "La vida adquiere significado cuando encontramos la conexión entre nuestras acciones y el bienestar de los demás"
+  },
+  {
+    "author": "André Gide",
+    "cite": "La autenticidad es la clave para desbloquear la puerta de nuestra verdadera identidad"
+  },
+  {
+    "author": "Julio Cortázar",
+    "cite": "La realidad es un laberinto de posibilidades infinitas, donde nuestras decisiones moldean nuestro destino"
+  },
+  {
+    "author": "Milan Kundera",
+    "cite": "La vida es un eterno juego de equilibrio, donde nuestras decisiones definen nuestro destino"
+  },
+  {
+    "author": "Franz Kafka",
+    "cite": "El laberinto de la existencia se revela cuando nos sumergimos en la oscuridad de nuestra propia mente"
+  },
+  {
+    "author": "Friedrich Nietzsche",
+    "cite": "La verdadera fuerza reside en la aceptación de nuestras vulnerabilidades y la perseverancia en la lucha"
+  },
+  {
+    "author": "Albert Camus",
+    "cite": "El auténtico valor de la vida se encuentra en los momentos de crisis y desafío"
+  },
+  {
+    "author": "Søren Kierkegaard",
+    "cite": "La verdadera libertad se encuentra en la elección consciente de vivir auténticamente, sin temor a la opinión de los demás"
+  },
+  {
+    "author": "Virginia Woolf",
+    "cite": "La escritura es el refugio donde podemos ser nosotros mismos sin miedo al juicio del mundo"
+  },
+  {
+    "author": "Hermann Hesse",
+    "cite": "La verdadera sabiduría radica en la capacidad de reconocer nuestras limitaciones y aprender de ellas"
+  },
+  {
+    "author": "Fyodor Dostoyevsky",
+    "cite": "El verdadero crecimiento personal surge de la confrontación con nuestras propias sombras"
+  },
+  {
+    "author": "Anton Chekhov",
+    "cite": "La belleza se encuentra en los momentos más simples, en los detalles más insignificantes"
+  },
+  {
+    "author": "Henrik Ibsen",
+    "cite": "El verdadero despertar ocurre cuando dejamos de vivir en piloto automático y nos enfrentamos a la realidad"
+  },
+  {
+    "author": "Leo Tolstoy",
+    "cite": "El amor genuino trasciende el ego y abraza la totalidad del ser amado"
+  },
+  {
+    "author": "Gustave Flaubert",
+    "cite": "La escritura es el espejo que refleja las múltiples facetas de la realidad humana"
+  },
+  {
+    "author": "Simone de Beauvoir",
+    "cite": "La verdadera grandeza se encuentra en los momentos más oscuros de nuestra vida"
+  },
+  {
+    "author": "Jorge Luis Borges",
+    "cite": "La realidad es un laberinto de palabras donde buscamos el significado de nuestra existencia"
+  },
+  {
+    "author": "Gabriel García Márquez",
+    "cite": "La vida es un caleidoscopio de momentos fugaces que debemos atesorar"
+  },
+  {
+    "author": "Italo Calvino",
+    "cite": "La imaginación es el portal que nos transporta a mundos desconocidos y posibilidades infinitas"
+  },
+  {
+    "author": "Hermann Broch",
+    "cite": "La verdadera esencia de la vida se revela en los momentos de crisis y transformación"
+  },
+  {
+    "author": "Rainer Maria Rilke",
+    "cite": "El arte es el puente que conecta nuestra alma con lo divino"
+  },
+  {
+    "author": "Paul Valéry",
+    "cite": "La poesía es el lenguaje que permite a nuestra alma expresar lo inefable"
+  },
+  {
+    "author": "Albert Cohen",
+    "cite": "La verdadera felicidad se encuentra en la conexión con los demás y la compasión hacia su sufrimiento"
+  },
+  {
+    "author": "André Gide",
+    "cite": "La autenticidad es el camino hacia la verdadera libertad y plenitud"
+  },
+  {
+    "author": "Julio Cortázar",
+    "cite": "La realidad es un enigma que solo podemos comprender a través de múltiples perspectivas"
+  },
+  {
+    "author": "Milan Kundera",
+    "cite": "La vida es una obra de arte que se va construyendo con cada elección que hacemos"
+  },
+  {
+    "author": "Franz Kafka",
+    "cite": "La verdadera libertad se encuentra en la aceptación de nuestra propia naturaleza y la renuncia al control"
+  },
+  {
+    "author": "Friedrich Nietzsche",
+    "cite": "El sufrimiento es la piedra angular de la existencia humana, que nos impulsa a buscar un sentido más elevado"
+  },
+  {
+    "author": "Albert Camus",
+    "cite": "La vida adquiere significado a través de la rebelión contra la absurda indiferencia del universo"
+  },
+  {
+    "author": "Søren Kierkegaard",
+    "cite": "La verdadera grandeza se encuentra en la capacidad de abrazar la paradoja y vivir en la incertidumbre"
+  },
+  {
+    "author": "Virginia Woolf",
+    "cite": "La escritura es el vínculo que une nuestras emociones más profundas con el mundo que nos rodea"
+  },
+  {
+    "author": "Hermann Hesse",
+    "cite": "La búsqueda de la felicidad radica en la exploración de nuestro propio ser y la conexión con la naturaleza"
+  },
+  {
+    "author": "Fyodor Dostoyevsky",
+    "cite": "La verdadera redención se encuentra en la capacidad de perdonar y ser perdonado"
+  },
+  {
+    "author": "Anton Chekhov",
+    "cite": "La belleza de la vida se encuentra en los momentos de serenidad y contemplación"
+  },
+  {
+    "author": "Henrik Ibsen",
+    "cite": "La verdad solo puede ser encontrada cuando nos atrevemos a cuestionar las convenciones sociales"
+  },
+  {
+    "author": "Leo Tolstoy",
+    "cite": "El amor auténtico es un acto de entrega incondicional que trasciende las limitaciones del ego"
+  },
+  {
+    "author": "Gustave Flaubert",
+    "cite": "La escritura es el refugio donde podemos dar forma a nuestras emociones y dar voz a nuestras inquietudes"
+  },
+  {
+    "author": "Simone de Beauvoir",
+    "cite": "La libertad es una responsabilidad que debemos ejercer con valentía y compromiso"
+  },
+  {
+    "author": "Jorge Luis Borges",
+    "cite": "La literatura es un laberinto de palabras que nos invita a explorar los confines de nuestra imaginación"
+  },
+  {
+    "author": "Gabriel García Márquez",
+    "cite": "La magia de la vida se encuentra en los encuentros fortuitos y las historias que nos conectan"
+  },
+  {
+    "author": "Italo Calvino",
+    "cite": "La imaginación es el motor que impulsa la creación y la transformación de nuestra realidad"
+  },
+  {
+    "author": "Hermann Broch",
+    "cite": "La verdadera grandeza se forja en los momentos de mayor adversidad"
+  },
+  {
+    "author": "Rainer Maria Rilke",
+    "cite": "El arte es el refugio donde encontramos la belleza y la trascendencia en medio de la vida cotidiana"
+  },
+  {
+    "author": "Paul Valéry",
+    "cite": "La poesía es el lenguaje que nos permite explorar las profundidades de nuestra existencia"
+  },
+  {
+    "author": "Albert Cohen",
+    "cite": "La verdadera sabiduría se encuentra en la comprensión y aceptación de nuestras propias limitaciones"
+  },
+  {
+    "author": "André Gide",
+    "cite": "La autenticidad es el camino hacia la plenitud y la conexión con nuestra verdadera esencia"
+  },
+  {
+    "author": "Julio Cortázar",
+    "cite": "La realidad es una construcción subjetiva que puede ser moldeada por nuestra percepción"
+  },
+  {
+    "author": "Milan Kundera",
+    "cite": "La vida es un rompecabezas en constante evolución, donde cada experiencia encaja en su lugar"
+  },
+  {
+    "author": "Franz Kafka",
+    "cite": "El laberinto de la existencia se revela cuando nos sumergimos en la oscuridad de nuestra propia mente"
+  },
+  {
+    "author": "Friedrich Nietzsche",
+    "cite": "La verdadera grandeza reside en la aceptación de nuestras vulnerabilidades y la voluntad de superarlas"
+  },
+  {
+    "author": "Albert Camus",
+    "cite": "La vida adquiere sentido cuando enfrentamos el absurdo con valentía y encontramos nuestras propias razones para seguir adelante"
+  },
+  {
+    "author": "Søren Kierkegaard",
+    "cite": "La verdadera libertad se encuentra en la autenticidad de nuestras elecciones y la responsabilidad de vivir con las consecuencias"
+  },
+  {
+    "author": "Virginia Woolf",
+    "cite": "La escritura es el refugio donde podemos explorar nuestra propia identidad y dar voz a nuestras experiencias más íntimas"
+  },
+  {
+    "author": "Hermann Hesse",
+    "cite": "La verdadera sabiduría reside en la aceptación de nuestras imperfecciones y la búsqueda constante de la authorrealización"
+  },
+  {
+    "author": "Fyodor Dostoyevsky",
+    "cite": "El sufrimiento humano es el motor que impulsa el crecimiento y la evolución de nuestra conciencia"
+  },
+  {
+    "author": "Anton Chekhov",
+    "cite": "La belleza de la vida se encuentra en los pequeños momentos de alegría y asombro que a menudo pasan desapercibidos"
+  },
+  {
+    "author": "Henrik Ibsen",
+    "cite": "La verdad solo puede ser enfrentada con coraje, incluso cuando nos cause dolor y desafíos"
+  },
+  {
+    "author": "Leo Tolstoy",
+    "cite": "El amor incondicional es el puente que conecta nuestras almas y nos abre a un mundo de posibilidades infinitas"
+  },
+  {
+    "author": "Gustave Flaubert",
+    "cite": "La escritura es un acto de resistencia contra la fugacidad de la existencia y una forma de inmortalidad"
+  },
+  {
+    "author": "Simone de Beauvoir",
+    "cite": "La libertad no es un regalo, sino una lucha constante por preservarla y expandirla"
+  },
+  {
+    "author": "Jorge Luis Borges",
+    "cite": "La literatura es el mapa que nos guía a través de los laberintos de la imaginación y nos permite explorar universos infinitos"
+  },
+  {
+    "author": "Gabriel García Márquez",
+    "cite": "La magia de la vida se encuentra en los detalles que a menudo pasan desapercibidos, en las historias que nos conectan y nos hacen humanos"
+  },
+  {
+    "author": "Italo Calvino",
+    "cite": "La imaginación es la fuerza motriz que impulsa la creación y la transformación, y nos permite explorar mundos desconocidos"
+  },
+  {
+    "author": "Hermann Broch",
+    "cite": "La verdadera grandeza se forja en los momentos de mayor adversidad, cuando nos enfrentamos a nuestros miedos y limitaciones"
+  },
+  {
+    "author": "Rainer Maria Rilke",
+    "cite": "El arte es el puente que conecta nuestra alma con lo divino y nos permite trascender los límites de la existencia cotidiana"
+  },
+  {
+    "author": "Paul Valéry",
+    "cite": "La poesía es el lenguaje de las emociones y los pensamientos más profundos, que no pueden ser expresados con palabras comunes"
+  },
+  {
+    "author": "Albert Cohen",
+    "cite": "La verdadera felicidad se encuentra en la conexión con los demás y en la compasión hacia su sufrimiento"
+  },
+  {
+    "author": "André Gide",
+    "cite": "La autenticidad es el camino hacia la plenitud y la conexión con nuestra verdadera esencia"
+  },
+  {
+    "author": "Julio Cortázar",
+    "cite": "La realidad es una construcción subjetiva que puede ser moldeada por nuestra percepción y nuestra capacidad de asombro"
+  },
+  {
+    "author": "Milan Kundera",
+    "cite": "La vida es un rompecabezas en constante evolución, donde cada experiencia encaja en su lugar y nos ayuda a encontrar nuestro propósito"
+  },
+  {
+    "author": "Franz Kafka",
+    "cite": "El laberinto de la existencia se revela cuando nos sumergimos en la oscuridad de nuestra propia mente y enfrentamos nuestros miedos más profundos"
+  },
+  {
+    "author": "Friedrich Nietzsche",
+    "cite": "La verdadera grandeza reside en la aceptación de nuestras vulnerabilidades y la voluntad de superarlas, encontrando fuerza en nuestra propia debilidad"
+  },
+  {
+    "author": "Albert Camus",
+    "cite": "La vida adquiere sentido cuando enfrentamos el absurdo con valentía y encontramos nuestras propias razones para seguir adelante, a pesar de las adversidades"
+  },
+  {
+    "author": "Søren Kierkegaard",
+    "cite": "La verdadera grandeza se encuentra en la capacidad de abrazar la paradoja y vivir en la incertidumbre, manteniendo nuestra integridad a pesar de las contradicciones"
+  },
+  {
+    "author": "Virginia Woolf",
+    "cite": "La escritura es el vínculo que une nuestras emociones más profundas con el mundo que nos rodea, permitiéndonos comunicarnos y comprendernos mejor"
+  },
+  {
+    "author": "Hermann Hesse",
+    "cite": "La búsqueda de la felicidad radica en la exploración de nuestro propio ser y la conexión con la naturaleza, encontrando equilibrio entre el yo y el mundo"
+  },
+  {
+    "author": "Fyodor Dostoyevsky",
+    "cite": "La verdadera redención se encuentra en la capacidad de perdonar y ser perdonado, liberándonos de la carga del pasado y abriendo el camino hacia la sanación"
+  },
+  {
+    "author": "Anton Chekhov",
+    "cite": "La belleza de la vida se encuentra en los pequeños momentos de serenidad y contemplación, en la apreciación de lo simple y lo cotidiano"
+  },
+  {
+    "author": "Henrik Ibsen",
+    "cite": "La verdad solo puede ser enfrentada con coraje, incluso cuando nos cause dolor y desafíos, ya que solo a través de la verdad podemos crecer y encontrar autenticidad"
+  },
+  {
+    "author": "Leo Tolstoy",
+    "cite": "El amor incondicional es el puente que conecta nuestras almas y nos abre a un mundo de posibilidades infinitas, trascendiendo el ego y encontrando la plenitud en la entrega"
+  },
+  {
+    "author": "Gustave Flaubert",
+    "cite": "La escritura es un acto de resistencia contra la fugacidad de la existencia y una forma de inmortalidad, dejando una huella perdurable en la historia"
+  },
+  {
+    "author": "Simone de Beauvoir",
+    "cite": "La libertad no es un regalo, sino una lucha constante por preservarla y expandirla, desafiando las normas impuestas y encontrando nuestra propia voz"
+  }
+]
+}

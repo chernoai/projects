@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Especificar la codificación de caracteres para evitar problemas de visualización -->
+  <meta charset="UTF-8" />
+  <!-- Especificar el modo de compatibilidad para Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Especificar el ancho del viewport para adaptarse al tamaño de la pantalla del dispositivo -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/normalize.css">
+  <title>Traductor Binario</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  </style>
+  <style>
+    :root {
+      --dark: #07071a;
+      --darkblue: #0e2447;
+      --blue: #2c60af;
+      --lightblue: #60a4fe;
+      --sky: #a5f1fa;
+    }
+
+    body {
+      background: var(--dark);
+    }
+
+    .container {
+      padding: 10px;
+      color: var(--blue);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 100;
+    }
+
+    h1,
+    h2 {
+      color: var(--lightblue);
+    }
+
+    .translate-box {
+      margin: 15px 0;
+    }
+
+    .translate-box textarea {
+      background: #a5f1fadb;
+      color: var(--darkblue);
+      margin: 3px 0;
+      padding: 7px;
+      height: 200px;
+      width: 80%;
+      max-width: 600px;
+      border: none;
+      border-radius: 10px;
+      font-family: monospace;
+      font-size: 1.5em;
+      resize: none;
+    }
+
+    textarea:focus,
+    textarea:hover {
+      outline: none;
+      background: #a5f1faa7;
+    }
+
+    .translate-box p {
+      margin: 10px;
+    }
+
+    .translate-box input {
+      padding: 7px;
+      border-radius: 5px;
+      border: none;
+      background: #2c60af;
+    }
+
+    .translate-box input:hover {
+      background: #1f4175;
+    }
+
+    .translate-box input:active {
+      transform: scale(.97);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>What do you want to translate?</h1>
+    <div class="translate-box translate-box__TTB">
+      <h2>Text to Binarie</h2>
+      <textarea class="text__Text-to-Binarie"></textarea>
+      <p class="text-TTB"></p>
+      <input type="button" class="translate-btn__TTB" value="Translate" />
+    </div>
+    <div class="translate-box">
+      <h2>Binarie to Text</h2>
+      <textarea class="text__Binarie-to-Text"></textarea>
+      <p class="text-BTT"></p>
+      <input type="button" class="translate-btn__BTT" value="Translate" />
+    </div>
+  </div>
+  <script>
+    const translateBoxTTB = document.querySelector(".translate-box__TTB");
+
+    const pTTB = document.querySelector(".text-TTB");
+    const pBTT = document.querySelector(".text-BTT");
+
+    const textTTB = document.querySelector(".text__Text-to-Binarie");
+    const textBTT = document.querySelector(".text__Binarie-to-Text");
+
+    const buttonTTB = document.querySelector(".translate-btn__TTB");
+    const buttonBTT = document.querySelector(".translate-btn__BTT");
+
+    const addText = (content) => {
+      const text = document.createTextNode(content);
+      pTTB.appendChild(text);
+    };
+    const addBinCode = (content) => {
+      const text = document.createTextNode(content);
+      pBTT.appendChild(text);
+    };
+
+    buttonTTB.addEventListener("click", (e) => {
+      e.preventDefault(); // Evita que el formulario se envíe
+
+      pTTB.innerHTML = ""; // Elimina el contenido anterior
+
+      addText(stringToBin(textTTB.value));
+    });
+    buttonBTT.addEventListener("click", (e) => {
+      e.preventDefault(); // Evita que el formulario se envíe
+
+      pBTT.innerHTML = ""; // Elimina el contenido anterior
+
+      addBinCode(binToString(textBTT.value));
+    });
+
+    const stringToBin = (str) => {
+      str = str.split("");
+      let frase = [];
+      for (let i = 0; i < str.length; i++) {
+        frase.push(`${str[i].charCodeAt().toString(2)} `);
+      }
+      frase = frase.join("").trim();
+      return frase;
+    };
+    const binToString = (str) => {
+      str = str.split(" ");
+      let frase = [];
+      for (let i = 0; i < str.length; i++) {
+        str[i] = parseInt(str[i], 2);
+        frase.push(String.fromCharCode(str[i]));
+      }
+      frase = frase.join("");
+      return frase;
+    };
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+:root {
+  --mtt-black: #181818;
+  --drk-brown: #5a261d;
+  --brown: #783925;
+}
+
+body {
+  background: var(--mtt-black);
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header,
+.main,
+.footer {
+  padding: 10px;
+  background: var(--brown);
+  border-radius: 7px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  margin-top: 15px;
+  flex-basis: 50px;
+  color: #2f1f1f;
+}
+
+h1 {
+  margin: 3px 0;
+  font-family: "Noto Serif", serif;
+}
+
+header p {
+  margin-top: 3px;
+  font-family: "PT Serif", serif;
+  font-weight: 900;
+}
+
+.main {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-basis: 300px;
+  flex-grow: 2;
+  flex-shrink: 0;
+  padding-top: 10px;
+}
+
+.cookie {
+  padding-top: 0;
+  filter: drop-shadow(1px 1px 5px #000);
+  transition: transform 0.2s;
+  z-index: 10;
+}
+
+.cookie:hover,
+.logo:hover,
+.reload:hover {
+  transform: scale(0.97);
+}
+
+.cookie:active,
+.logo:active,
+.reload:active {
+  transform: scale(0.9);
+}
+
+.cite--container {
+  position: absolute; /* Cambia la posición a absoluta */
+  top: 50%; /* Establece la posición vertical al 50% del contenedor principal */
+  left: 50%; /* Establece la posición horizontal al 50% del contenedor principal */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Mueve el elemento hacia el centro tanto vertical como horizontalmente */
+  width: 80%;
+  opacity: 0;
+}
+
+.cite--content {
+  background: var(--drk-brown);
+  font-style: italic;
+  font-weight: 200;
+  padding: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 9px 2px #000;
+}
+
+.cite--container p {
+  width: 100%;
+  text-align: right;
+}
+
+.reload {
+  margin: 10px 0;
+  font-size: 25px;
+  color: #2f1f1f;
+  transition: transform 0.3s;
+}
+
+.reload:active {
+  transform: rotate(180deg);
+}
+
+.social-media {
+  margin: 5px 0;
+  height: fit-content;
+}
+
+.logo {
+  color: var(--mtt-black);
+  font-size: 40px;
+}
+.reloj {
+  margin: auto;
+  margin-top: 70px;
+  display: inline-flex;
+  border-radius: 5px;
+}
+
+.reloj div {
+  padding: 5px 7px;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: monospace;
+  color: var(--mtt-black);
+  background: var(--drk-brown) ;
+}
+.footer {
+  background: #2828282b;
+  color: #444;
+  text-align: right;
+  width: 100%;
+  flex-grow: 0;
+  margin: 0;
+  border-radius: 0%;
+}
+
+.appear {
+  z-index: 10;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.desappear {
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}

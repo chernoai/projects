@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Portafolio Personal</title>
+  <style>
+    /* Estilos generales */
+    body {
+      background: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2022/08/programacion-java-2789481.jpg?tf=3840x");
+      background-size: cover;
+      background-position: center center;
+      font-family: "Raleway", sans-serif;
+      margin: 0;
+    }
+
+    /* Barra de navegación */
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background-color: #1b1b32;
+      box-shadow: 0px 2px 5px #000;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 80px;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+
+    .nav-list li {
+      margin: 0 10px;
+      font-size: 20px;
+    }
+
+    .nav-list li a {
+      color: #f5f6f7;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .nav-list li a:hover {
+      color: #5ecde0;
+    }
+
+    /* Sección de bienvenida */
+    #welcome-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #f5f6f7;
+      text-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
+      margin: 10px;
+    }
+
+    #des-ws {
+      font-size: 20px;
+      color: #f5f6f7;
+      text-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
+      margin-top: 0;
+    }
+
+    /* Sección de proyectos */
+    .projects-container {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .project {
+      display: inline-block;
+      margin-right: 20px;
+      vertical-align: top;
+      animation: slide-projects 20s linear infinite;
+    }
+
+    @keyframes slide-projects {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+    }
+
+    .project h3 {
+      color: #d0d0d5;
+      background-color: #3b3b4f;
+      height: 25px;
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      box-shadow: 1px 1px 3px #000;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .project h3:hover {
+      background-color: #5ecde0;
+    }
+
+    /* Sección de contacto */
+    #contact {
+      text-align: center;
+      background-color: #2a2a40;
+      padding: 20px;
+      color: #dfdfe2;
+    }
+
+    .contacts-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .contacts {
+      color: #888;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .contacts:hover {
+      transform: scale(1.1);
+    }
+
+    .contact-links {
+      height: 50px;
+      width: 50px;
+      margin-bottom: 5px;
+    }
+
+    /* Footer */
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      background-color: #2a2a40;
+      height: 50px;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+    }
+
+    footer p {
+      margin: 0;
+      padding: 0;
+      color: #dfdfe2;
+    }
+
+    /* Media queries */
+    @media (max-width: 500px) {
+      .nav-list {
+        width: 70%;
+        height: 60px;
+      }
+
+      .nav-list li {
+        margin: 0 auto;
+      }
+
+      .project {
+        width: 95%;
+        /* Cambio en el ancho de los proyectos */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- START NAV -->
+  <nav id="navbar">
+    <ul class="nav-list">
+      <li>
+        <a href="#welcome-section">Sobre mí</a>
+      </li>
+      <li>
+        <a href="#projects">Proyectos</a>
+      </li>
+      <li>
+        <a href="#contact">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /END NAV -->
+
+  <!-- START WELCOME SECTION -->
+  <section id="welcome-section">
+    <h1>Hola, soy Cherno</h1>
+    <p id="des-ws">Soy desarrollador web</p>
+  </section>
+  <!-- /END WELCOME SECTION -->
+
+  <!-- START BIO SECTION -->
+  <section id="bio">
+    <div id="bio-header">
+      <h2>Biografía</h2>
+      <img src="path/to/foto.jpg" alt="Foto de perfil">
+    </div>
+    <p>Aquí puedes escribir una breve biografía sobre ti y tu trayectoria como desarrollador web.</p>
+  </section>
+  <!-- /END BIO SECTION -->
+
+  <!-- START SKILLS SECTION -->
+  <section id="skills">
+    <h2>Experiencia y Habilidades</h2>
+    <p>Aquí puedes enumerar tu experiencia laboral y habilidades relevantes en el campo de desarrollo web.</p>
+  </section>
+  <!-- /END SKILLS SECTION -->
+
+  <!-- START PROJECTS SECTION -->
+  <section id="projects">
+    <h2>Proyectos</h2>
+    <div class="projects-container">
+      <div class="project">
+        <a id="profile-link" target="_blank"></a>
+        <a class="project-tile" href="https://codepen.io/chernoai/pen/dygXPXz" target="_blank">
+          <img src="https://shots.codepen.io/chernoai/pen/dygXPXz-512.jpg?version=1681690495">
+          <h3>Formulario de encuesta</h3>
+        </a>
+      </div>
+      <div class="project">
+        <a class="project-tile" href="https://codepen.io/chernoai/pen/eYPzmdp" target="_blank">
+          <img src="https://shots.codepen.io/chernoai/pen/eYPzmdp-512.jpg?version=1681690469">
+          <h3>Página de tributo</h3>
+        </a>
+      </div>
+      <div class="project">
+        <a class="project-tile" href="https://codepen.io/chernoai/pen/dygXPXz" target="_blank">
+          <img src="https://shots.codepen.io/chernoai/pen/eYPzmBp-512.jpg?version=1681690446">
+          <h3>Página de documentación técnica</h3>
+        </a>
+      </div>
+      <div class="project">
+        <a class="project-tile" href="https://codepen.io/chernoai/pen/dygXPXz" target="_blank">
+          <img src="https://shots.codepen.io/chernoai/pen/qBJNEqm-512.jpg?version=1681690361">
+          <h3>Página de lanzamiento de producto</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- /END PROJECTS SECTION -->
+
+  <!-- START CONTACT SECTION -->
+  <section id="contact">
+    <div id="contact-header">
+      <h2>Contacto</h2>
+      <p>Puedes contactarme a través de los siguientes medios:</p>
+    </div>
+    <div class="contacts-container">
+      <a class="contacts" href="#">
+        <img class="contact-links instagram"
+          src="https://cdn.icon-icons.com/icons2/2428/PNG/512/instagram_black_logo_icon_147122.png">
+        <span>Instagram</span>
+      </a>
+      <a class="contacts" href="#">
+        <img class="contact-links twitter" src="https://cdn.icon-icons.com/icons2/1/PNG/256/social_Twitter_38.png">
+        <span>Twitter</span>
+      </a>
+      <a class="contacts" href="#">
+        <img class="contact-links linkedin"
+          src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png">
+        <span>LinkedIn</span>
+      </a>
+      <a class="contacts" href="#">
+        <img class="contact-links phone"
+          src="https://cdn.icon-icons.com/icons2/614/PNG/512/phone-symbol-of-an-auricular-inside-a-circle_icon-icons.com_56478.png">
+        <span>Teléfono</span>
+      </a>
+    </div>
+  </section>
+  <!-- /END CONTACT SECTION -->
+
+  <!-- START FOOTER SECTION -->
+  <footer>
+    <p>
+      © Creado para Cherno Malik Embalo Diop
+    </p>
+    <div id="downloads">
+      <a href="path/to/cv.pdf" download="cv_programador_web.pdf">Descargar Curriculum Vitae</a>
+      <a href="path/to/source_code.zip" download="proyectos_programador_web.zip">Descargar Código Fuente</a>
+    </div>
+  </footer>
+  <!-- /END FOOTER SECTION -->
+  <!-- Resto del contenido de tu página -->
+  <script src="code.js"></script>
+  <script>
+    // Agrega el siguiente código JavaScript para hacer que los proyectos se deslicen horizontalmente
+    const projectsContainer = document.querySelector('.projects-container');
+    const projects = document.querySelectorAll('.project');
+
+    projectsContainer.addEventListener('mouseover', function () {
+      this.style.overflowX = 'auto';
+    });
+
+    projectsContainer.addEventListener('mouseout', function () {
+      this.style.overflowX = 'hidden';
+    });
+
+    projectsContainer.addEventListener('mousemove', function (e) {
+      const containerWidth = this.offsetWidth;
+      const projectsWidth = this.scrollWidth;
+      const scrollPos = this.scrollLeft;
+      const mouseX = e.pageX - this.offsetLeft;
+
+      if (mouseX < containerWidth / 2) {
+        this.scrollLeft -= 1;
+      } else if (mouseX > containerWidth / 2) {
+        this.scrollLeft += 1;
+      }
+    });
+    projectsContainer.innerHTML += projectsContainer.innerHTML;
+
+    projectsContainer.addEventListener('mouseenter', function () {
+      this.style.animationPlayState = 'paused';
+    });
+
+    projectsContainer.addEventListener('mouseleave', function () {
+      this.style.animationPlayState = 'running';
+    });
+  </script>
+</body>
+
+</html

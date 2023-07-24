@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/normalize.css">
+  <title>Convertidor De Dias</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&family=Roboto+Flex:wght@300&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/3c1cfcfd53.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --green: #abc270;
+      --mango: #fec868;
+      --orange: #fda769;
+      --drk-mud: #3b2819;
+      --mud: #473c33;
+    }
+
+    body {
+      background: var(--green);
+      text-align: center;
+    }
+
+    .container {
+      margin: 7px;
+      padding: 10px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-family: 'Merriweather Sans', sans-serif;
+      color: var(--drk-mud);
+      font-size: 25px;
+      margin: 5px 0;
+    }
+
+    .inputs {
+      margin: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .inputs input {
+      height: 25px;
+      padding: 3px;
+      margin: 10px 0;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 3px;
+      border: none;
+      margin: 0 5px;
+    }
+
+    .inputs input:focus {
+      outline: none;
+    }
+
+    #numDays {
+      width: 70px;
+      max-width: fit-content;
+      background: var(--orange);
+      color: var(--drk-mud);
+      font-family: monospace;
+    }
+
+    #numDays:hover {
+      background: #be7d4f;
+    }
+
+    #numDays::-webkit-inner-spin-button,
+    #numDays::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+
+    #submit {
+      width: fit-content;
+      text-align: center;
+      height: 25px;
+      padding: 7px;
+      font-size: 13px;
+      font-weight: 200;
+      background: var(--drk-mud);
+      color: #ffffbb;
+    }
+
+    #submit:hover {
+      background: #271a11;
+    }
+
+    #submit:active {
+      transform: scale(.9);
+    }
+
+    .texts {
+      width: 350px;
+      margin: 0 auto;
+      padding: 16px;
+      background: var(--mango);
+      color: var(--drk-mud);
+      border-radius: 5px;
+      font-family: 'Roboto Flex', sans-serif;
+      font-size: 18px;
+      opacity: 0;
+    }
+
+    .texts p {
+      margin: 3px 0;
+    }
+
+    .remove {
+      margin: 15px 0;
+      color: var(--drk-mud);
+    }
+
+    .remove:active {
+      transform: scale(.95);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>How many days do you want to calculate?</h1>
+    <div class="inputs">
+      <input type="number" id="numDays">
+      <input type="submit" id="submit" value="Calculate">
+    </div>
+    <i class="fa-solid fa-trash remove"></i>
+    <div class="texts"></div> 
+  </div>
+  <script>
+    const calDays = document.querySelector("#numDays");
+    const container = document.querySelector(".container");
+    const calculateBTN = document.getElementById("submit")
+    const texts = document.querySelector(".texts");
+    const remove = document.querySelector(".remove")
+
+    const addText = (content) => {
+      const p = document.createElement("p");
+      p.classList.add("output")
+      const text = document.createTextNode(content);
+      p.appendChild(text);
+      texts.appendChild(p);
+      texts.style.opacity = "1"
+    };
+    const calculateDays = (e) => {
+      const numDays = parseInt(calDays.value); // Obtén el valor como número entero
+
+      if (isNaN(numDays)) {
+        const text = "Enter the days you want to calculate";
+        addText(text);
+      } else {
+        const text = `In ${numDays} days it will be ${newFechaUTC(numDays)}`;
+        addText(text);
+      }
+    }
+    const removeOutput = () => {
+      const output = document.querySelectorAll(".output")
+      output.forEach(output => {
+        output.remove();
+        texts.style.opacity = "0"
+      });
+    }
+
+    calDays.addEventListener("keydown", e => {
+      if (e.keyCode === 13) {
+        calculateDays(e)
+      }
+    })
+    calculateBTN.addEventListener("click", e => {
+      e.preventDefault(); // Evita que el formulario se envíe
+      calculateDays(e)
+    });
+    remove.addEventListener("click", e => {
+      e.preventDefault()
+      removeOutput()
+    })
+    calDays.addEventListener("keydown", e => {
+      if (e.keyCode == 46) {
+        event.preventDefault();
+        removeOutput()
+      }
+    })
+
+    const newFechaUTC = (numDays) => {
+      let date = new Date();
+      date.setTime(date.getTime() + numDays * 1000 * 60 * 60 * 24);
+      return date.toUTCString();
+    };
+  </script>
+</body>
+</html>

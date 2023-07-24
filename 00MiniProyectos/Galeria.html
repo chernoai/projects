@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/normalize.css">
+  <title>Document</title>
+  <style>
+    body {
+      color: #222;
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .zona-arrastre {
+      margin: 50px auto 30px auto;
+      padding: 60px 20px;
+      outline: 5px dashed #aaa;
+      background: #ccc;
+      max-width: 500px;
+      color: #222;
+      text-align: center;
+    }
+
+    .resultado {
+      text-align: center;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fil, minmax(250px, 1fr));
+      grid-auto-rows: 100px;
+      gap: 6px;
+    }
+
+    img {
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 2px solid #444;
+      transition: transform 1s, box-shadow 1.5s;
+      box-shadow: 0px 0px 10px 5px #000;
+    }
+
+    img:hover {
+      animation: moverse 2s forwards;
+    }
+
+    @keyframes moverse {
+      from {
+        transform: translate(0, 0);
+        box-shadow: 0px 0px 10px 5px #000;
+      }
+
+      to {
+        transform: translate(100px, 0);
+        box-shadow: 0px 0px 0px 0px transparent;
+      }
+    }
+
+    img:active {
+      width: 15em;
+      height: 15em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="zona-arrastre">Arrastre y suelte un archivo</div>
+  <div class="resultado"></div>
+  <script>
+    "use sctrict";
+
+    const zona = document.querySelector(".zona-arrastre");
+
+    zona.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      changeStyle(e.target, "#444", "#777");
+    });
+    zona.addEventListener("dragleave", (e) => {
+      e.preventDefault();
+      changeStyle(e.target, "#aaa", "#ccc");
+    });
+    zona.addEventListener("drop", (e) => {
+      e.preventDefault();
+      changeStyle(e.target, "#aaa", "#ccc");
+      cargarArchivo(e.dataTransfer.files[0]);
+    });
+    const changeStyle = (obj, outcolor, backcolor) => {
+      obj.style.background = backcolor;
+      obj.style.outline = `5px dashed ${outcolor}`;
+    };
+
+    const cargarArchivo = (ar) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(ar);
+      reader.addEventListener("load", (e) => {
+        let url = URL.createObjectURL(ar);
+        let img = document.createElement("IMG");
+        img.setAttribute("src", url);
+        document.querySelector(".resultado").appendChild(img);
+      });
+    };
+  </script>
+</body>
+
+</html>

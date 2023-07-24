@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/normalize.css">
+  <title>Transition</title>
+  <style>
+    .container {
+      padding: 20px 5px;
+      background: #86f;
+    }
+
+    .caja {
+      width: 10px;
+      height: 10px;
+      background: #047;
+      margin: 30px;
+      position: relative;
+      transition: left 10s;
+      left: 0;
+    }
+
+    .caja:hover {
+      left: 80%;
+    }
+
+    .caja:first-child {
+      transition-timing-function: linear;
+    }
+
+    .caja:nth-child(2) {
+      transition-timing-function: ease;
+    }
+
+    .caja:nth-child(3) {
+      transition-timing-function: ease-in;
+    }
+
+    .caja:nth-child(4) {
+      transition-timing-function: ease-in-out;
+    }
+
+    .caja:nth-child(5) {
+      transition-timing-function: ease-out;
+    }
+
+    .caja:nth-child(6) {
+      transition-timing-function: step-start;
+    }
+
+    .caja:nth-child(7) {
+      transition-timing-function: step-end;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+  </div>
+</body>
+
+</html>
