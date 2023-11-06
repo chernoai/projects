@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Gallery</title>
+  <link rel="stylesheet" href="/myrest.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Anime Art</h1>
+  <div class="line"></div>
+  <div class="image-gallery">
+    <img src="./img/02ee6f10-daff-450e-a0a5-e1b39d7892a8.jpeg" alt="" class="img-1">
+    <img src="./img/12ab6f1c-72b3-475c-a19d-b0db9ee30b92.jpeg" alt="" class="img-2">
+    <img src="./img/1fc57453-f410-4e66-96f9-b3a0060d030e.jpeg" alt="" class="img-3">
+    <img src="./img/55262ef2-cf59-4789-95df-7678443ff56a.jpeg"
+      alt="" class="img-4">
+      <img src="./img/5c6f9ba7-53ac-44ba-b7d4-ce982783beda.jpeg" alt="" class="img-5">
+      <img src="./img/83e9e245-86e9-4d0f-9451-612c190503a5.jpeg" alt="" class="img-6">
+      <img src="" alt=""
+      class="img-7">
+      <img src="" alt="" class="img-8">
+      <img src="" alt="" class="img-9"><img src="" alt=""
+      class="img-10"><img src="" alt="" class="img-11"><img src="" alt="" class="img-12"><img src="" alt=""
+      class="img-13"><img src="" alt="" class="img-14"><img src="" alt="" class="img-15"><img src="" alt=""
+      class="img-16"><img src="" alt="" class="img-17"><img src="" alt="" class="img-18"><img src="" alt=""
+      class="img-19"><img src="" alt="" class="img-20"><img src="" alt="" class="img-21"><img src="" alt=""
+      class="img-22"><img src="" alt="" class="img-23"><img src="" alt="" class="img-24"><img src="" alt=""
+      class="img-25"><img src="" alt="" class="img-26"><img src="" alt="" class="img-27"><img src="" alt=""
+      class="img-28"><img src="" alt="" class="img-29"><img src="" alt="" class="img-30"><img src="" alt=""
+      class="img-31"><img src="" alt="" class="img-32"><img src="" alt="" class="img-33"><img src="" alt=""
+      class="img-34"><img src="" alt="" class="img-35"><img src="" alt="" class="img-36"><img src="" alt=""
+      class="img-37"><img src="" alt="" class="img-38"><img src="" alt="" class="img-39"><img src="" alt=""
+      class="img-40">
+  </div>
+</body>
+<script>
+      // Ruta de la carpeta que contiene las imágenes
+      const carpetaImagenes = 'C:/Users/Chernobyl/repos/projects/FlexGallery/img';
+
+// Selecciona el div donde se mostrarán las imágenes
+const galleryDiv = document.getElementById('image-gallery');
+
+// Función para cargar las imágenes
+function cargarImagenes() {
+  // Utiliza una solicitud AJAX para obtener la lista de archivos en la carpeta
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', carpetaImagenes, true);
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      // Parsea el contenido de la carpeta
+      const files = xhr.responseText.split('\n');
+      files.forEach(file => {
+        // Verifica que sea un archivo de imagen (puedes ajustar esta validación según tus necesidades)
+        if (/\.(jpg|jpeg|png|gif)$/i.test(file)) {
+          // Crea un elemento img para cada imagen
+          const img = document.createElement('img');
+          img.src = `${carpetaImagenes}/${file}`;
+          galleryDiv.appendChild(img);
+        }
+      });
+    }
+  };
+  xhr.send();
+}
+
+// Llama a la función para cargar las imágenes
+cargarImagenes();
+</script>
+</html>
