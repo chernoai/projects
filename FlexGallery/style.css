@@ -6,6 +6,8 @@ body {
 h1 {
   margin-top: 50px;
   text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande","Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #444;
 }
 .line {
   background-color: #666;
@@ -19,7 +21,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 10px 0;
+  gap: 20px 0;
   margin: 0 auto;
   box-sizing: border-box;
 }
